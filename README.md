@@ -1,7 +1,7 @@
 # Strategy Development Repository for v2realbot Trading Platform
 
 ## Overview
-Welcome to the Strategy Development Repository, dedicated exclusively to the development and discussion of trading strategies for the v2realbot Trading Platform. This repository is our central hub for strategizing, idea generation, and performance tracking.
+Repository edicated exclusively to the development and discussion of trading strategies for the v2realbot Trading Platform. Serves as a central hub for strategizing, idea generation, and performance tracking.
 
 ## Purpose
 This repository is established as an issue tracker to:
@@ -14,7 +14,7 @@ This repository is established as an issue tracker to:
 
 2. **Discussion and Feedback**: Use the issues section for ongoing discussions, feedback, and collaborative refinement of strategies.
 
-3. **Strategy Documentation**: Each strategy should be documented in detail on the Wiki pages, including its parameters, implementation guidelines, and any relevant backtesting results.
+3. **Strategy Documentation**: Each strategy should be documented in detail on the Wiki pages, including its parameters, implementation guidelines, and any relevant backtesting results. (Note: documentation either here or on (trading.mujdenik.eu)[trading.mujdenik.eu]
 
 4. **Problem Reporting and Optimization**: Report any issues or suggest optimizations for existing strategies through the Issues section, providing relevant data and analysis to support your observations.
 
