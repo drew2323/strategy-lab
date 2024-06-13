@@ -3,3 +3,22 @@ pywebview>=5.0.5
 orjson
 v2realbot @ git+https://github.com/drew2323/v2trading.git@master#egg=v2trading
 lightweight-charts @ git+https://github.com/drew2323/lightweight-charts-python.git@main#egg=lightweight-charts
+pyarrow
+matplotlib
+seaborn
+alpaca-py
+rich
+tomli
+appdirs
+python-dotenv
+filelock
+dill
+plotly
+dash
+dash-bootstrap-components
+tinydb
+tulipy
+ta-lib
+pywavelets
+/Users/davidbrazda/Desktop/vectorbtpro-2024.2.22-py3-none-any.whl
+sqlalchemy
