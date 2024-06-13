@@ -1,0 +1,5 @@
+pandas
+pywebview>=5.0.5
+orjson
+v2realbot @ git+https://github.com/drew2323/v2trading.git@master#egg=v2trading
+lightweight-charts @ git+https://github.com/drew2323/lightweight-charts-python.git@main#egg=lightweight-charts
