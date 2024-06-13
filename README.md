@@ -1,7 +1,7 @@
-# Strategy Development Repository for v2realbot Trading Platform
+# Research for v2realbot
 
 ## Overview
-Repository edicated exclusively to the development and discussion of trading strategies for the v2realbot Trading Platform. Serves as a central hub for strategizing, idea generation, and performance tracking.
+Strategy research and development tracker. Serves as a central hub for strategizing, idea generation, and performance tracking of the stragies
 
 ## Purpose
 This repository is established as an issue tracker to:
