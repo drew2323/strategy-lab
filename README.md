@@ -1,3 +1,13 @@
+# Note for The Team
+
+Entry points are in `strat_STRATEGYNAME` directories.
+
+there are `SINGLE` and `MULTI` version
+- `SINGLE` - just straight one pass meaning fetching data (local/remote), indicators and entry-points and backtest with SINGLE parameter values and strategy result. Used for basic strategy research.
+- `MULTI` - basic strategy pass taken from step above but with hyperparameters testing, result for each strategy for each parameter combination in vbt portfolio dataset. To evaluate performance of each(best) parameter combination, maybe display as parallel coordinates plot.
+
+I can imagine it can be used to create MVP (not use with notebooks as they become clumsy with lot of data), hyperparameter testing should be refactored, walk forward optimization and cross validation should be added.
+
 # Research for v2realbot
 
 ## Overview
