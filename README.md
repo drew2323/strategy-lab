@@ -1,4 +1,4 @@
-# Note for The Team
+# Notes for The Team
 
 Entry points are in `strat_STRATEGYNAME` directories in `research`.
 
