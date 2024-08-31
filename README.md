@@ -19,19 +19,18 @@ strategies I have worked on so far
 
 ## Data preparation
 
-Usually for strategies above 1second OHLCV data are prepared by vectorized aggregator based on trade data for given period fetched from Alpaca (simple not funded registration is needed there - both crypto/stocks). Aggregator is in `prepare_aggregated_data.ipynb`. Alpaca secret and key is loaded from .env it contains just
+Usually for strategies above,  1second OHLCV data are prepared by vectorized aggregator based on trade data for given period. Trade data are either loaded from local file or fetched from Alpaca (simple not funded registration required allowing to fetch data both crypto/stocks). Aggregator is in `prepare_aggregated_data.ipynb`. Alpaca secret and key is loaded from .env it contains just
 
 ```
 ACCOUNT1_LIVE_API_KEY=_YOUR_ALPACA_API_KEY
 ACCOUNT1_LIVE_SECRET_KEY=YOUR_ALPACA_SECRET_KEY
 ```
 
-It also uses some code from my `v2realbot` platform which is imported as requirement.
+It tries to load trade data from local files, if they are not present they are fetched from Alpaca by reusing components from my `v2realbot` platform which is imported as requirement.
 
-I usuall prepare these data in advanced and store it in `.parquet` format, usually I prepare few months of 1s data as highest resolution and then during the research I just load this parquet and then resample it to lower frequencies for signals, but usually backtest on 1s frequency in order to get highest precision of entry/exit.
+I usually prepare few months of 1s data (as highest resolution) and store it as `.parquet` file for each symbol. Then during the research I just load these parquets and then resample it to lower frequencies for signals, but usually backtest on 1s frequency in order to get highest precision of entry/exit.
 
-
-
+Hope it helps, feel free to contact me if you get stuck with something.
 
 # Research for v2realbot
 
