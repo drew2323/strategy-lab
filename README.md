@@ -36,4 +36,4 @@ This repository is established as an issue tracker to:
 - **Research folder**: Notebook dedicated do each strategy.
 
 ## Integration with v2realbot
-This repository operates in tandem with the `v2realbot` repository. Ensure all strategies are compatible and follow the guidelines for integration into the v2realbot Trading Platform.
+This repository operates in tandem with the [v2realbot](https://github.com/drew2323/v2trading) repository. Ensure all strategies are compatible and follow the guidelines for integration into the v2realbot Trading Platform.
