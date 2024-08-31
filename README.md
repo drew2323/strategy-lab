@@ -3,7 +3,7 @@
 Entry points are in `strat_STRATEGYNAME` directories in `research`.
 
 there are `SINGLE` and `MULTI` version
-- `SINGLE` - just straight one pass meaning fetching data (local/remote), indicators and entry-points and backtest with SINGLE parameter values and strategy result. Used for basic strategy research.
+- `SINGLE` - just straight one pass meaning fetching data (local/remote), the data cleaning(only main session, no extended market) indicators and entry-points (in given time window) and backtest with SINGLE parameter values and strategy result. Used for basic strategy research.
 - `MULTI` - basic strategy pass taken from step above but with hyperparameters testing, result for each strategy for each parameter combination in vbt portfolio dataset. To evaluate performance of each(best) parameter combination, maybe display as parallel coordinates plot.
 
 I can imagine it can be used to create MVP (not use with notebooks as they become clumsy with lot of data), hyperparameter testing should be refactored, walk forward optimization and cross validation should be added.
@@ -16,6 +16,22 @@ strategies I have worked on so far
 - SUPERTREND - supetrend on different resolutions
 - ORDER_IMBALANCE - order imbalanced columns calculated from trade data as new columns on OHLCV bars
 - TIME_ENTRIES - just idea for time based entries to leverage random movement of price
+
+## Data preparation
+
+Usually for strategies above 1second OHLCV data are prepared by vectorized aggregator based on trade data for given period fetched from Alpaca (simple not funded registration is needed there - both crypto/stocks). Aggregator is in `prepare_aggregated_data.ipynb`. Alpaca secret and key is loaded from .env it contains just
+
+```
+ACCOUNT1_LIVE_API_KEY=_YOUR_ALPACA_API_KEY
+ACCOUNT1_LIVE_SECRET_KEY=YOUR_ALPACA_SECRET_KEY
+```
+
+It also uses some code from my `v2realbot` platform which is imported as requirement.
+
+I usuall prepare these data in advanced and store it in `.parquet` format, usually I prepare few months of 1s data as highest resolution and then during the research I just load this parquet and then resample it to lower frequencies for signals, but usually backtest on 1s frequency in order to get highest precision of entry/exit.
+
+
+
 
 # Research for v2realbot
 
