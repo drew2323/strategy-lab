@@ -6,7 +6,7 @@ there are `SINGLE` and `MULTI` version
 - `SINGLE` - just straight one pass meaning fetching data (local/remote), the data cleaning(only main session, no extended market) indicators and entry-points (in given time window) and backtest with SINGLE parameter values and strategy result. Used for basic strategy research.
 - `MULTI` - basic strategy pass taken from step above but with hyperparameters testing, result for each strategy for each parameter combination in vbt portfolio dataset. To evaluate performance of each(best) parameter combination, maybe display as parallel coordinates plot.
 
-I can imagine it can be used to create MVP (not use with notebooks as they become clumsy with lot of data), hyperparameter testing should be refactored, walk forward optimization and cross validation should be added.
+I can imagine it can be used to create MVP (not sure about notebooks as they become clumsy with lots of data), hyperparameter testing should be refactored, walk forward optimization and cross validation should be added.
 
 Maybe start exploration with `/research/strat_ORDER_IMBALANCE/v2_single.ipynb`
 
