@@ -26,7 +26,7 @@ ACCOUNT1_LIVE_API_KEY=_YOUR_ALPACA_API_KEY
 ACCOUNT1_LIVE_SECRET_KEY=YOUR_ALPACA_SECRET_KEY
 ```
 
-It tries to load trade data from local files, if they are not present they are fetched from Alpaca by `fetch_trades_parallel` by reusing components from my `v2realbot` platform which is imported as requirement. Then the trades are aggregated by `aggregate_trades` - it accepts time based OHLCV or Volume Bars, Dollar Bars or Renko Bars.
+It tries to load trade data from local files, if they are not present they are fetched from Alpaca by `fetch_trades_parallel` by reusing components from my `v2realbot` platform which is imported as requirement. Then the trades are aggregated by `aggregate_trades` - it supports time based OHLCV or Volume Bars, Dollar Bars or Renko Bars.
 
 I usually prepare few months of 1s data (as highest resolution) and store it as `.parquet` file for each symbol. Then during the research I just load these parquets and then resample it to lower frequencies for signals, but usually backtest on 1s frequency in order to get highest precision of entry/exit.
 
