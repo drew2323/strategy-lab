@@ -84,7 +84,7 @@ jupyterlab_server==2.27.1
 jupyterlab_widgets==3.0.13
 kiwisolver==1.4.5
 korean-lunar-calendar==0.3.1
-lightweight_charts @ git+https://github.com/drew2323/lightweight-charts-python.git@35f029714b23c18abe791b90a85447e959c72258
+lightweight_charts @ git+https://github.com/drew2323/lightweight-charts-python.git@7986aa9195d9d3204a998d1a8f5778d95219a08e
 llvmlite==0.39.1
 lxml==5.3.0
 markdown-it-py==3.0.0
@@ -121,9 +121,11 @@ platformdirs==4.2.2
 plotly==5.24.0
 prometheus_client==0.21.0
 prompt_toolkit==3.0.47
+protobuf==5.28.2
 proxy-tools==0.1.0
 psutil==6.0.0
 psycopg2==2.9.9
+psycopg2-binary==2.9.9
 ptyprocess==0.7.0
 pure_eval==0.2.3
 pyarrow==11.0.0
@@ -147,6 +149,7 @@ PyWavelets==1.7.0
 pywebview==5.2
 PyYAML==6.0.2
 pyzmq==26.2.0
+ray==2.37.0
 referencing==0.35.1
 regex==2024.7.24
 requests==2.32.3
@@ -166,6 +169,7 @@ soupsieve==2.6
 SQLAlchemy==2.0.32
 sseclient-py==1.8.0
 stack-data==0.6.3
+stratlab_db @ git+https://gitea.stratlab.dev/Stratlab/db.git@0bbe486de7ac410a9375f2ccf7d557a658a662ea
 stumpy==1.13.0
 TA-Lib==0.4.32
 tenacity==9.0.0
@@ -193,7 +197,7 @@ webencodings==0.5.1
 websocket-client==1.8.0
 websockets==11.0.3
 Werkzeug==3.0.4
-widgetsnbextension==4.0.9
+widgetsnbextension==4.0.13
 yarl==1.13.1
 yfinance==0.2.43
 zipp==3.20.1
