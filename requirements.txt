@@ -37,7 +37,7 @@ dateparser==1.2.0
 debugpy==1.8.5
 decorator==5.1.1
 defusedxml==0.7.1
-dill==0.3.8
+dill==0.3.9
 exceptiongroup==1.2.2
 exchange_calendars==4.5.5
 executing==2.0.1
@@ -84,7 +84,7 @@ jupyterlab_server==2.27.1
 jupyterlab_widgets==3.0.13
 kiwisolver==1.4.5
 korean-lunar-calendar==0.3.1
-lightweight_charts @ git+https://github.com/drew2323/lightweight-charts-python.git@7986aa9195d9d3204a998d1a8f5778d95219a08e
+lightweight_charts @ git+https://github.com/drew2323/lightweight-charts-python.git@c4356bef3a29df29249149fa07160fce48ab8981
 llvmlite==0.39.1
 lxml==5.3.0
 markdown-it-py==3.0.0
@@ -96,6 +96,7 @@ mistune==3.0.2
 ml_dtypes==0.5.0
 msgpack==1.0.8
 multidict==6.1.0
+multiprocess==0.70.17
 multitasking==0.0.11
 mypy-extensions==1.0.0
 nbclient==0.10.0
@@ -114,11 +115,15 @@ pandas==2.2.1
 pandas_market_calendars==4.4.1
 pandocfilters==1.5.1
 parso==0.8.4
+pathos==0.3.3
+patsy==0.5.6
 peewee==3.17.6
 pexpect==4.9.0
 pillow==10.4.0
 platformdirs==4.2.2
 plotly==5.24.0
+pox==0.3.5
+ppft==1.7.6.9
 prometheus_client==0.21.0
 prompt_toolkit==3.0.47
 protobuf==5.28.2
@@ -169,6 +174,7 @@ soupsieve==2.6
 SQLAlchemy==2.0.32
 sseclient-py==1.8.0
 stack-data==0.6.3
+statsmodels==0.14.4
 stratlab_db @ git+https://gitea.stratlab.dev/Stratlab/db.git@0bbe486de7ac410a9375f2ccf7d557a658a662ea
 stumpy==1.13.0
 TA-Lib==0.4.32
@@ -182,6 +188,7 @@ toolz==0.12.1
 tornado==6.4.1
 tqdm==4.66.5
 traitlets==5.14.3
+ttools @ git+https://github.com/drew2323/ttools.git@6cfee7aa4c9f1c13efdf2b9dcb54d1ae2106d73d
 tulipy==0.4.0
 types-python-dateutil==2.9.0.20240316
 typing_extensions==4.9.0
